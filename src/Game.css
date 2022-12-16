@@ -1,0 +1,206 @@
+/* The board style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: cornflowerblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.app-container {
+    width: 80rem;
+    height: 80rem;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    margin-left: -40rem;
+}
+
+.panel1 {
+    position: absolute;
+    background-color: lightgoldenrodyellow;
+    border: 0.8rem solid burlywood;
+    -webkit-box-shadow: 0.7rem 0.5rem 1.5rem 0.8rem rgba(0, 0, 0, 0.9);
+    box-shadow: 0.7rem 0.5rem 1.5rem 0.3rem rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+.header {
+    left: 50%;
+    top: 15rem;
+    height: 8rem;
+    width: 30rem;
+    margin-left: -15.5rem;
+
+}
+
+.header-text {
+    font-size: 3rem;
+    font-weight: bold;
+    width: 20rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+
+}
+
+.footer {
+    left: 50%;
+    top: 75rem;
+    height: 8rem;
+    width: 30rem;
+    margin-left: -15rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer button {
+    margin-left: 8rem;
+    margin-top: 0.75rem;
+    width: 15rem;
+    height: 5rem;
+    padding-left: -45rem;
+    background-color: lightskyblue;
+    font-size: 2rem;
+    box-shadow: -0.8rem 0.5rem 1rem 0.2rem rgba(0, 0, 0, 0.9);
+    border: 0.5rem solid chocolate;
+    font-weight: bold;
+}
+
+
+.footer button:active {
+    -webkit-box-shadow: 0.7rem 0.5rem 1.5rem 0.8rem rgba(0, 0, 0, 0.9);
+    box-shadow: 0.7rem 0.5rem 1.5rem 0.3rem rgba(0, 0, 0, 0.9);
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 2rem;
+    width: 50rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -25rem;
+    top: 25%;
+    border: 0.8rem solid burlywood;
+    border-radius: 8%;
+    background-color: bisque;
+    -webkit-box-shadow: 0.7rem 0.5rem 1.5rem 0.8rem rgba(0, 0, 0, 0.9);
+    box-shadow: 0.7rem 0.5rem 1.5rem 0.3rem rgba(0, 0, 0, 0.9);
+
+
+
+
+}
+
+/* Circle palet */
+.gamecircle {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+    padding-left: -2rem;
+    margin-left: -0.1rem;
+    border-radius: 50%;
+    border: 0.4rem solid black;
+}
+
+.player0 {
+    background-color: white;
+}
+
+.player1 {
+    background-color: red;
+}
+
+.player2 {
+    background-color: green;
+}
+
+
+/* Responsive */
+
+
+
+
+@media (max-width:765px) {
+
+    .app-container {
+        width: 80rem;
+        height: 80rem;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        top: 10%;
+        margin-left: -40rem;
+    }
+
+    .panel1 {
+        position: absolute;
+        background-color: lightgoldenrodyellow;
+        border: 0.8rem solid burlywood;
+        -webkit-box-shadow: 0.7rem 0.5rem 1.5rem 0.8rem rgba(0, 0, 0, 0.9);
+        box-shadow: 0.7rem 0.5rem 1.5rem 0.3rem rgba(0, 0, 0, 0.9);
+        z-index: 1;
+    }
+
+    .header {
+        left: 50%;
+        top: 21rem;
+        height: 8rem;
+        width: 30rem;
+        margin-left: -4.1rem;
+
+    }
+
+    .footer {
+        left: 50%;
+        top: 70rem;
+        height: 8rem;
+        width: 30rem;
+        margin-left: -5.2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer button {
+        width: 13rem;
+        margin-left: -0.100rem;
+        margin-top: 0.5rem;
+        font-size: 2rem;
+        box-shadow: -0.8rem 0.5rem 1rem 0.2rem rgba(0, 0, 0, 0.9);
+    }
+
+    .footer button:active {
+        -webkit-box-shadow: 0.7rem 0.5rem 1.5rem 0.8rem rgba(0, 0, 0, 0.9);
+        box-shadow: 0.7rem 0.5rem 1.5rem 0.3rem rgba(0, 0, 0, 0.9);
+    }
+
+    .gameboard {
+        width: 40rem;
+        overflow: hidden;
+        top: 60%;
+        margin: -20rem;
+        margin-left: -9.4rem;
+    }
+
+    .gamecircle {
+        width: 6rem;
+        height: 6rem;
+        left: 50%;
+        margin-left: 1.2rem;
+    }
+
+}
